@@ -1,15 +1,18 @@
 # Computer Infrastructure - Automating Weather Data
-
-**by Marcella Morgan (contactmarcellamorgan@gmail.com)**
+**Author:** Marcella Morgan 
+![My First GitHub Workflow](my_first_github_workflow.png)
 
 This is the repository for my project for the Computer Infrastructure module of the [Higher Diploma in Science in Data Analytics given by ATU Galway-Mayo](https://www.gmit.ie/higher-diploma-in-science-in-computing-in-data-analytics). My lecturer was [Ian McLoughlin](https://github.com/ianmcloughlin).
 
 In this project, I demonstrate skills learned throughout the module, including using the command line, automating scripts, and analysing real-world weather data. The final component automates data collection from the Met Éireann weather API using GitHub Actions and presents a pandas-based analysis of the data.
 
 ## Getting Started
-To get started with this repository, you'll need:
-1. **Python**: Install Python (I recommend using Anaconda).
-2. **A notebook editor**: I used Visual Studio Code, but you can also use Jupyter Notebook or Google Colab.
+
+To get started with this repository, you’ll need:  
+1. **Python**: Install Python (I recommend using [Anaconda](https://www.anaconda.com/), which includes all the necessary tools and libraries).  
+2. **A Notebook Editor**: I used Visual Studio Code, but you can also use [Jupyter Notebook](https://jupyter.org/) or [Google Colab](https://colab.research.google.com/).  
+
+If using Google Colab, you can easily upload the Jupyter Notebook file (.ipynb) and run it directly in your browser without needing to set up Python locally. Just make sure you have the required Python libraries installed in your environment to follow along with the code.
 
 ## Why This Project Is Useful
 This project is aimed at showcasing how to combine command line tools, automation, and Python data analysis. It serves as a practical example for anyone starting out with scripting, data collection, and analysis. It might also help future students of the Computer Infrastructure module understand how to approach the tasks and project.
@@ -32,6 +35,9 @@ I also downloaded live weather data from Met Éireann using wget and saved it wi
 For the project, I automated the process of collecting and storing weather data from Met Éireann. Using a GitHub Actions workflow, I set up a weather.sh script to run daily at 8 AM, downloading weather data and saving it with timestamped filenames in the data/weather directory. The workflow was defined in a YAML file, specifying tasks like cloning the repository, running the script, and committing new data back to the repository.
 
 This automation ensures the data is collected consistently without manual input, showcasing the integration of bash scripting with GitHub Actions to streamline repetitive tasks.
+
+Issue: Pulling and Pushing to GitHub
+I encountered a new issue after setting up the automated GitHub Actions workflow. It was constantly adding new data files and because I hadn't gotten into the habit of doing a `git pull` before making edits and, I ran into problems when trying to push. By committing my changes and using `git pull origin main`, I resolved the issue since there was no conflict between the new data files and my edits. But it taught me about how important it is to keep on top of pulling files and keeping track of edits. I imagine this can get very messy when working on bigger projects.
 
 
 ## Task 9: Pandas Data Analysis
