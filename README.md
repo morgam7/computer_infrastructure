@@ -2,7 +2,7 @@
 **Author:** Marcella Morgan
 **Image Credit:** DALL·E 
 
-![My First GitHub Workflow](my_first_github_workflow.png)
+![My First GitHub Workflow](images/my_first_github_workflow.png)
 
 This is the repository for my project for the Computer Infrastructure module of the [Higher Diploma in Science in Data Analytics given by ATU Galway-Mayo](https://www.gmit.ie/higher-diploma-in-science-in-computing-in-data-analytics). My lecturer was [Ian McLoughlin](https://github.com/ianmcloughlin).
 
@@ -25,6 +25,18 @@ Here are the main libraries and tools I used in the project:
 - **Matplotlib**: For visualising the weather data, such as temperature trends.
 - **NumPy**: For numerical operations used in the analysis.
 - **GitHub Actions**: To automate the daily collection of weather data.
+
+A `requirements.txt` file is included in the root of the repository. It lists all the Python dependencies needed to run this project.
+
+To install the dependencies, follow these steps:
+
+1. Ensure you have Python and pip installed on your system.
+2. Navigate to the project directory in your terminal.
+3. Run the following command to install all the required packages:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Tasks 1-7:
 
@@ -67,6 +79,35 @@ This project has been a fantastic learning experience, pushing me to tackle real
 
 ## Getting Help
 If you have questions about this repository or the project, feel free to contact me at [contactmarcellamorgan@gmail.com](mailto:contactmarcellamorgan@gmail.com). Alternatively, you can submit an issue via GitHub issues.
+
+## Resources
+I relied on Python libraries like pandas and matplotlib throughout these assignments. Additional references include:
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+- I also used Chat GPT when I found myself stumped. It was useful at explaining very specific problems I was having quickly, but it also got a few things wrong! 
+
+### General Environment Issues:
+https://www.geeksforgeeks.org/how-to-run-bash-script-in-linux/  
+https://stackoverflow.com/questions/19986306/what-does-the-mean-when-running-commands  
+https://www.reddit.com/r/learnpython/comments/1r2nqm/python_scripts_running_from_command_prompt_but/  
+https://superuser.com/questions/77247/how-do-i-install-wget-for-windows  
+https://stackoverflow.com/questions/29113456/wget-not-recognized-as-internal-or-external-command  
+https://askubuntu.com/questions/1094739/man-command-not-working-in-ubuntu-18-04  
+
+### Git and GitHub:
+https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/controlling-permissions-for-github_token  
+https://github.com/orgs/community/discussions/35410  
+https://stackoverflow.com/questions/54278883/forgot-to-git-pull-before-working-and-now-i-cant-git-push  
+https://www.reddit.com/r/git/comments/w337j4/how_to_resolve_several_merge_conflicts_when/  
+
+### Python and Pandas
+https://stackoverflow.com/questions/36692861/avoiding-error-from-pd-to-datetime-in-pandas  
+https://pandas.pydata.org/docs/user_guide/style.html  
+https://www.geeksforgeeks.org/make-a-gradient-color-mapping-on-a-specified-column-in-pandas/  
+https://stackoverflow.com/questions/76506990/github-doesnt-reflect-pandas-styles  
+https://github.com/mwaskom/seaborn/issues/1090  
+
+
 
 ## END
 
