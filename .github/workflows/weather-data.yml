@@ -2,9 +2,9 @@ name: Weather Data Automation
 
 on:
   schedule:
-    # Run daily at 08 AM (UTC)
+    # Runs daily at 08 AM (UTC)
     - cron: '0 08 * * *'
-  workflow_dispatch: # Allows manual triggering for testing
+  workflow_dispatch: 
 
 jobs:
   fetch-weather:
