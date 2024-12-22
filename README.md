@@ -1,5 +1,7 @@
 # Computer Infrastructure - Automating Weather Data
-**Author:** Marcella Morgan 
+**Author:** Marcella Morgan
+**Image Credit:** DALL·E 
+
 ![My First GitHub Workflow](my_first_github_workflow.png)
 
 This is the repository for my project for the Computer Infrastructure module of the [Higher Diploma in Science in Data Analytics given by ATU Galway-Mayo](https://www.gmit.ie/higher-diploma-in-science-in-computing-in-data-analytics). My lecturer was [Ian McLoughlin](https://github.com/ianmcloughlin).
@@ -24,7 +26,7 @@ Here are the main libraries and tools I used in the project:
 - **NumPy**: For numerical operations used in the analysis.
 - **GitHub Actions**: To automate the daily collection of weather data.
 
-## Tasks 1-8:
+## Tasks 1-7:
 
 In these tasks, I built foundational skills in command-line operations and scripting. Starting with creating and managing directories, I used commands like mkdir and touch to structure files and handle timestamps. Tasks included logging and formatting dates with the date command, appending outputs to files, and automating these processes with a bash script.
 
@@ -35,9 +37,6 @@ I also downloaded live weather data from Met Éireann using wget and saved it wi
 For the project, I automated the process of collecting and storing weather data from Met Éireann. Using a GitHub Actions workflow, I set up a weather.sh script to run daily at 8 AM, downloading weather data and saving it with timestamped filenames in the data/weather directory. The workflow was defined in a YAML file, specifying tasks like cloning the repository, running the script, and committing new data back to the repository.
 
 This automation ensures the data is collected consistently without manual input, showcasing the integration of bash scripting with GitHub Actions to streamline repetitive tasks.
-
-Issue: Pulling and Pushing to GitHub
-I encountered a new issue after setting up the automated GitHub Actions workflow. It was constantly adding new data files and because I hadn't gotten into the habit of doing a `git pull` before making edits and, I ran into problems when trying to push. By committing my changes and using `git pull origin main`, I resolved the issue since there was no conflict between the new data files and my edits. But it taught me about how important it is to keep on top of pulling files and keeping track of edits. I imagine this can get very messy when working on bigger projects.
 
 
 ## Task 9: Pandas Data Analysis
@@ -52,14 +51,17 @@ For this task, I used pandas to load and analyse weather data files downloaded v
 - Added a heatmap-style visualisation of the temperature data using `temperature_df.style.background_gradient(cmap="coolwarm")`.
 
 ### Challenges I Faced
-- **Data Formatting Issues**:  
+- **Data Formatting Issues:** 
   At one point, the `reportTime` column started showing dates instead of just times. This happened because pandas hadn’t been told to treat it as a time column, so it misinterpreted the data. I fixed it by converting the column to `datetime` and then extracting just the time part using `.dt.time`.  
 
-- **GitHub Incompatibility**:  
+- **GitHub Incompatibility:**
   The `background_gradient` styling for the DataFrame didn’t show up on GitHub because it relies on HTML/CSS, which isn’t supported. So the pretty colours didn't survive the journey to GitHub.
 
-- **Column Data Types**:  
-  Some columns were incorrectly treated as objects instead of numbers or datetime types. I used `pd.to_datetime()` to sort this out.  
+- **Column Data Types:** 
+  Some columns were incorrectly treated as objects instead of numbers or datetime types. I used `pd.to_datetime()` to sort this out.
+
+- **Pulling and Pushing to GitHub:** 
+  I encountered a new issue after setting up the automated GitHub Actions workflow. It was constantly adding new data files and because I hadn't gotten into the habit of doing a git pull before making edits and, I ran into problems when trying to push. By committing my changes and using git pull origin main, I resolved the issue since there was no conflict between the new data files and my edits. But it taught me about how important it is to keep on top of pulling files and keeping track of edits. I imagine this can get very messy when working on bigger projects. 
 
 This project has been a fantastic learning experience, pushing me to tackle real-world problems and learn how to automate workflows effectively. I hope it proves helpful for anyone exploring similar projects!
 
